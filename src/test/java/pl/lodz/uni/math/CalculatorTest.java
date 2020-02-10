@@ -41,8 +41,11 @@ public class CalculatorTest {
         assertEquals(-1,k.podziel(-2,2),0.001);
         assertEquals(1,k.podziel(-2,-2),0.001);
         assertEquals(3.5,k.podziel(7,2),0.001);
-       
-
-       // assertEquals(0,k.podziel(2,0),0.001);
     }
+
+    @Test(expected = ArithmeticException.class)
+    public void testDivideByZero() {
+        k.podziel(1,0);
+    }
+
 }
