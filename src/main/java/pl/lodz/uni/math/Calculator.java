@@ -17,6 +17,7 @@ public class Calculator {
     }
 
     public float podziel(float a, float b) throws ArithmeticException {
+        if( b == 0) throw new ArithmeticException("Dzielenie przez zero!");
        try {
             float result = a/b;
             return result;
