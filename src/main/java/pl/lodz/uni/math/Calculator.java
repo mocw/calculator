@@ -4,7 +4,7 @@ public class Calculator {
 
     public Calculator() {}
 
-    public float dodaj(int a, float b){
+    public float dodaj(float a, float b){
         return a+b;
     }
 
@@ -23,5 +23,14 @@ public class Calculator {
             return result;
        } catch (ArithmeticException e){}
        return 0;
+    }
+
+    public float podniescDoPotegi(float l, float p){
+        return (float) Math.pow(l,p);
+    }
+
+    public double pierwiastekKwadratowy(double l) throws ArithmeticException {
+        if( l < 0 ) throw new ArithmeticException("Pierwiastek z liczby ujemnej!");
+        return Math.sqrt(l);
     }
 }
