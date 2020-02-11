@@ -17,3 +17,4 @@ $text = $text + $status
 $time = (Get-Date).ToString("HH mm s")
 $path = ".\scriptTests\app_[" + $time + "s.].txt"
 $text | Out-File -LiteralPath $path
+
