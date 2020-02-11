@@ -17,12 +17,11 @@ public class Calculator {
     }
 
     public float podziel(float a, float b) throws ArithmeticException {
-        if( b == 0) throw new ArithmeticException("Dzielenie przez zero!");
-       try {
+        if( b == 0) {
+            throw new ArithmeticException("Dzielenie przez zero!");
+        }
             float result = a/b;
             return result;
-       } catch (ArithmeticException e){}
-       return 0;
     }
 
     public float podniescDoPotegi(float l, float p){

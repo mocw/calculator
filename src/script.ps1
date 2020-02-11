@@ -14,6 +14,6 @@ Write-Host Errors!
 $status = "TEST FAILED!"
 }
 $text = $text + $status
-$time = (Get-Date).ToString("HH MM s")
-$path = ".\app_[" + $time + "s.].txt"
+$time = (Get-Date).ToString("HH mm s")
+$path = ".\scriptTests\app_[" + $time + "s.].txt"
 $text | Out-File -LiteralPath $path
